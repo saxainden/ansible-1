@@ -50,6 +50,7 @@ base_packages:
   - libreoffice
   - libvirt-client
   - libxcrypt-compat
+  - liferea
   - makemkv
   - mediawriter
   - meld
@@ -74,6 +75,7 @@ base_packages:
   - podman
   - python3
   - python3-devel
+  - ranger
   - remmina
   - reptyr
   - ruby

@@ -45,7 +45,6 @@ base_packages:
   - iftop
   - keepassxc
   - keychain
-  - kubectl
   - libgnome-keyring
   - libmp4v2
   - libreoffice

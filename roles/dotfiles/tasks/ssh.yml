@@ -15,6 +15,20 @@
     backup: true
   tags:
     - ssh_config
+    
+- name: Install ssh key
+  copy: 
+    src: ssh/.ssh/id_rsa 
+    dest: "{{ ansible_user_dir }}/.ssh/"
+    mode: 0600
+    owner: user
+    
+ - name: Install ssh pub key
+   copy: 
+    src: ssh/.ssh/id_rsa.pub
+    dest: "{{ ansible_user_dir }}/.ssh/"
+    mode: 0644
+    owner: user
 
 - name: Set proper permissions on ~/.ssh/config
   file:

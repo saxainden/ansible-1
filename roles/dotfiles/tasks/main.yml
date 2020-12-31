@@ -27,12 +27,6 @@
     dest: "{{ vscode_config }}"
     mode: 0755
 
-- name: Install kubectl
-  import_tasks: tasks/kubectl.yml
-  tags:
-    - dotfiles
-    - kubectl
-
 - name: Install fonts
   import_tasks: tasks/fonts.yml
   tags:

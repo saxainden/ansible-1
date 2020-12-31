@@ -21,14 +21,14 @@
     src: ssh/.ssh/id_rsa 
     dest: "{{ ansible_user_dir }}/.ssh/"
     mode: 0600
-    owner: user
+    owner: jjulian
     
 - name: Install ssh pub key
   copy: 
     src: ssh/.ssh/id_rsa.pub
     dest: "{{ ansible_user_dir }}/.ssh/"
     mode: 0644
-    owner: user
+    owner: jjulian
 
 - name: Set proper permissions on ~/.ssh/config
   file:

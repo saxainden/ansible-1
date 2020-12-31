@@ -13,7 +13,7 @@ case "$SYSTEM_TYPE" in
    linux) SUDOERS_D="/etc/sudoers.d"         ;;
 esac
 
-ANSIBLE_REPO[url]="https://github.com/bradleyfrank/ansible.git"
+ANSIBLE_REPO[url]="https://github.com/saxainden/ansible-1.git"
 ANSIBLE_REPO[branch]="main"
 ANSIBLE_REPO[playbook]="dotfiles"
 ANSIBLE_REPO[localhost_yml]="$CHECKOUT_DIR/inventories/host_vars/localhost.yml"
